@@ -14,7 +14,7 @@ export const AboutWrapper = styled.div`
 
 export const CoverWrapper = styled.div`
   position: relative;
-  width: 38%;
+  width: 40%;
   margin-right: 4%;
 
   @media screen and (max-width: 659px) {
@@ -25,7 +25,7 @@ export const CoverWrapper = styled.div`
 `
 
 export const InformationWrapper = styled.div`
-  width: 58%;
+  width: 60%;
   font-size: 14px;
   line-height: 24px;
 

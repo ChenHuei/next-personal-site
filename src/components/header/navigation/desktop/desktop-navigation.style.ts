@@ -36,6 +36,10 @@ export const DesktopNavigationItem = styled.div`
     transition: 0.5s;
   }
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:hover {
     opacity: 1;
 
@@ -44,9 +48,5 @@ export const DesktopNavigationItem = styled.div`
       height: 2px;
       left: 0;
     }
-  }
-
-  &:last-child {
-    margin-right: 0;
   }
 `

@@ -10,6 +10,7 @@ export const HeaderWrapper = styled.header`
   left: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 5%;
   background-color: #2d3338;
 `
@@ -26,7 +27,7 @@ export const MobileMenu = styled.div<HamburgerProps>`
   width: 100vw;
   height: 100vh;
   position: fixed;
-  left: ${props => (props.isOpen ? 0 : '100vw')};
+  left: ${props => (props.isOpen ? 0 : '125vw')};
   top: 0;
   background-color: #202124;
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);

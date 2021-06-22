@@ -5,18 +5,33 @@ export const AboutWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 659px) {
+    flex-direction: column;
+  }
 `
 
 export const CoverWrapper = styled.div`
   position: relative;
-  width: 40%;
+  width: 38%;
   height: 300px;
+  margin-right: 4%;
+
+  @media screen and (max-width: 659px) {
+    width: 280px;
+    margin-right: 0;
+  }
 `
 
 export const InformationWrapper = styled.div`
-  width: 60%;
+  width: 58%;
   font-size: 14px;
   line-height: 24px;
+
+  @media screen and (max-width: 659px) {
+    width: 100%;
+    margin-top: 60px;
+  }
 `
 
 export const InformationName = styled.p`

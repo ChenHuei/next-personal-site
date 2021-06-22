@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SectionWrapper = styled.section`
-  padding: 80px 5%;
+  padding: 80px 10%;
 
   &:nth-child(even) {
     background-color: #fff;

@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+  padding: 0 10%;
   background-color: #2d3338;
   z-index: 1;
 `

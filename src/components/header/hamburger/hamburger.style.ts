@@ -5,7 +5,7 @@ export const HamburgerWrapper = styled.div`
   display: none;
   position: fixed;
   top: 16px;
-  right: 5%;
+  right: 10%;
   width: 45px;
   height: 30px;
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);

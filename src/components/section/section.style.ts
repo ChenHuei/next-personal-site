@@ -3,7 +3,11 @@ import styled from 'styled-components'
 export const SectionWrapper = styled.section`
   padding: 80px 5%;
 
-  &:nth-of-type(2n) {
+  &:nth-child(even) {
+    background-color: #fff;
+  }
+
+  &:nth-child(odd) {
     background-color: #f9f9f9;
   }
 `

@@ -24,6 +24,7 @@ export const DesktopNavigationItem = styled.div`
   transition: 0.5s;
   opacity: 0.6;
   cursor: pointer;
+  text-transform: capitalize;
 
   &::after {
     content: '';

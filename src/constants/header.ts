@@ -3,14 +3,14 @@ import { NavigationItem } from '@/types/header'
 export const HEADER_ITEMS: NavigationItem[] = [
   {
     id: 0,
-    label: 'About'
+    label: 'about'
   },
   {
     id: 1,
-    label: 'Resume'
+    label: 'resume'
   },
   {
     id: 2,
-    label: 'Works'
+    label: 'works'
   }
 ]

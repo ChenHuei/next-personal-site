@@ -18,6 +18,7 @@ export const MobileNavigationItem = styled.div`
   align-items: center;
   color: #fff;
   cursor: pointer;
+  text-transform: capitalize;
 
   &::after {
     content: '';

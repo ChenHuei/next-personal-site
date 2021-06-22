@@ -18,6 +18,7 @@ export const SectionTitle = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 64px;
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 2px;

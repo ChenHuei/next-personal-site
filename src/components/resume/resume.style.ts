@@ -1,8 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const ResumeList = styled.div`
-  margin-top: 64px;
-`
+export const ResumeList = styled.div``
 
 export const ResumeItem = styled.div`
   position: relative;

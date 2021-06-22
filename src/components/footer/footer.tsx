@@ -7,8 +7,6 @@ import {
   FooterContactItemIcon
 } from './footer.style'
 
-// export const FOOTER_ITEMS: ContactItem[]
-
 export interface FooterProps {
   title: string
   list: ContactItem[]

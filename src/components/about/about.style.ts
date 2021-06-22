@@ -31,7 +31,6 @@ export const InformationWrapper = styled.div`
 
   @media screen and (max-width: 659px) {
     width: 100%;
-    margin-top: 60px;
   }
 `
 

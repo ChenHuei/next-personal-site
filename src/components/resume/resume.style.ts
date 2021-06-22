@@ -21,6 +21,12 @@ export const ResumeItemInformation = styled.div<{ isOdd: boolean }>`
   display: flex;
   flex-direction: column;
 
+  @media screen and (max-width: 659px) {
+    max-width: 100%;
+    border-left: 2px solid #767676;
+    border-right: none;
+  }
+
   ${props =>
     props.isOdd
       ? css`
@@ -42,4 +48,9 @@ export const ResumeItemInformationTitle = styled.h2<{ isOdd: boolean }>`
   line-height: 32px;
   letter-spacing: 0.4px;
   text-align: ${props => (props.isOdd ? 'left' : 'right')};
+
+  @media screen and (max-width: 659px) {
+    font-size: 16px;
+    text-align: left;
+  }
 `

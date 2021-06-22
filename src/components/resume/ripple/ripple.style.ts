@@ -18,6 +18,10 @@ export const RippleWrapper = styled.div<{ isFirst: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 659px) {
+    left: 1px;
+  }
 `
 
 export const RippleCircle = styled.div`

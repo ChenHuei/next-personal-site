@@ -13,6 +13,10 @@ export const WorksItem = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 659px) {
+    flex-direction: column;
+  }
 `
 
 export const WorksItemLink = styled.a`
@@ -26,12 +30,21 @@ export const WorksItemLink = styled.a`
   &:hover {
     opacity: 0.6;
   }
+
+  @media screen and (max-width: 659px) {
+    width: 100%;
+  }
 `
 
 export const WorksItemInformation = styled.div`
   width: 50%;
   padding: 0 24px;
   font-size: 14px;
+
+  @media screen and (max-width: 659px) {
+    width: 100%;
+    text-align: center;
+  }
 `
 
 export const WorksItemInformationTitle = styled.h1`

@@ -4,21 +4,22 @@ import styled from 'styled-components'
 export const AboutWrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 
   @media screen and (max-width: 659px) {
     flex-direction: column;
+    align-items: center;
   }
 `
 
 export const CoverWrapper = styled.div`
   position: relative;
   width: 38%;
-  height: 300px;
   margin-right: 4%;
 
   @media screen and (max-width: 659px) {
     width: 280px;
+    height: 300px;
     margin-right: 0;
   }
 `
@@ -37,15 +38,17 @@ export const InformationWrapper = styled.div`
 export const InformationName = styled.p`
   font-size: 24px;
   font-weight: 700;
+  margin: 0;
 `
 
 export const InformationJobs = styled.p`
-  margin: 8px 0;
+  margin: 12px 0;
   color: #333;
   letter-spacing: 1px;
 `
 
 export const InformationDescription = styled.p`
+  margin: 0;
   color: #767676;
   text-align: justify;
   letter-spacing: 0.2px;

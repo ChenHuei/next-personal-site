@@ -45,6 +45,7 @@ export const ResumeItemInformationTitle = styled.h2<{ isOdd: boolean }>`
   font-weight: 500;
   line-height: 32px;
   letter-spacing: 0.4px;
+  color: #202124;
   text-align: ${props => (props.isOdd ? 'left' : 'right')};
 
   @media screen and (max-width: 659px) {

@@ -24,6 +24,7 @@ export const ProjectItem = styled.div`
 export const ProjectItemTitle = styled.h2`
   margin: 0;
   font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
 `
 export const ProjectItemLink = styled.a<{ isOdd: boolean }>`

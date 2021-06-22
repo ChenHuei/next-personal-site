@@ -21,6 +21,7 @@ export const CoverWrapper = styled.div`
     width: 280px;
     height: 300px;
     margin-right: 0;
+    margin-bottom: 60px;
   }
 `
 

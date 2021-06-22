@@ -46,6 +46,10 @@ export const ProjectItemLink = styled.a<{ isOdd: boolean }>`
       : css`
           margin-right: -8px;
         `}
+
+  @media screen and (max-width: 659px) {
+    margin-left: -8px;
+  }
 `
 
 export const ProjectItemDescription = styled.p`

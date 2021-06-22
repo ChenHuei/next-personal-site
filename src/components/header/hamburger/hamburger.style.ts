@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { HamburgerProps } from './hamburger'
 
 export const HamburgerWrapper = styled.div`
@@ -29,20 +29,40 @@ export const HamburgerLine = styled.div<HamburgerProps>`
   transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:nth-child(1) {
-    top: ${props => (props.isOpen ? '-3px' : 0)};
-    left: ${props => props.isOpen && '8px'};
-    transform: ${props => props.isOpen && 'rotate(45deg)'};
+    ${props =>
+      props.isOpen
+        ? css`
+            top: -3px;
+            left: 8px;
+            transform: rotate(45deg);
+          `
+        : css`
+            top: 0;
+          `}
   }
 
   &:nth-child(2) {
     top: 12px;
-    width: ${props => props.isOpen && 0};
-    opacity: ${props => props.isOpen && 0};
+
+    ${props =>
+      props.isOpen
+        ? css`
+            width: 0;
+            opacity: 0;
+          `
+        : ''}
   }
 
   &:nth-child(3) {
-    top: ${props => (props.isOpen ? '29px' : '24px')};
-    left: ${props => props.isOpen && '8px'};
-    transform: ${props => props.isOpen && 'rotate(-45deg)'};
+    ${props =>
+      props.isOpen
+        ? css`
+            top: 29px;
+            left: 8px;
+            transform: rotate(-45deg);
+          `
+        : css`
+            top: 24px;
+          `}
   }
 `

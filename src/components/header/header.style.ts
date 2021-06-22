@@ -13,6 +13,7 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   padding: 0 5%;
   background-color: #2d3338;
+  z-index: 1;
 `
 
 export const Logo = styled(Image)`

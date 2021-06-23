@@ -1,4 +1,6 @@
 import { useRef } from 'react'
+import Head from 'next/head'
+
 import styled from 'styled-components'
 
 // components
@@ -24,6 +26,18 @@ export default function Home() {
 
   return (
     <HomeWrapper>
+      <Head>
+        <title>Chen Huei</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Chen Huei"></meta>
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Introduction of Chen Huei" />
+        <meta property="og:description" content="Chen Huei" />
+        <meta property="og:image" content="/public/cover.jpg" />
+        <meta property="og:url" content="https://next-personal-site-alpha.vercel.app/" />
+        <meta property="og:site_name" content="Chen Huei" />
+      </Head>
+
       <Header list={HEADER_ITEMS} refs={{ about: aboutRef, resume: resumeRef, works: worksRef }} />
       <About ref={aboutRef} title="about me" {...ABOUT_INFORMATION} />
       <Resume ref={resumeRef} title="resume" list={RESUME_INFORMATION} />

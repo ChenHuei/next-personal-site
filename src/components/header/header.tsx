@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { RefObject, useState } from 'react'
 
 // components
 import { HeaderWrapper, Logo, DesktopMenu, MobileMenu } from './header.style'
@@ -10,20 +10,32 @@ import { NavigationItem } from '@/types/header'
 
 export interface HeaderProps {
   list: NavigationItem[]
+  refs: {
+    [key: string]: RefObject<HTMLElement>
+    about: RefObject<HTMLElement>
+    resume: RefObject<HTMLElement>
+    works: RefObject<HTMLElement>
+  }
 }
 
 const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false)
-  const { list } = props
+  const { list, refs } = props
 
   const handleNavigate = (label: string): void => {
-    console.log(label)
+    refs[label].current?.scrollIntoView({ behavior: 'smooth' })
     setIsOpen(false)
   }
 
   return (
     <HeaderWrapper>
-      <Logo src="/logo.png" width={64} height={64} alt="logo" />
+      <Logo
+        src="/logo.png"
+        width={64}
+        height={64}
+        alt="logo"
+        onClick={() => handleNavigate('about')}
+      />
       <DesktopMenu>
         <Navigation list={list} isMobile={false} handleNavigate={handleNavigate} />
         <Hamburger isOpen={isOpen} onClick={() => setIsOpen(prev => !prev)} />

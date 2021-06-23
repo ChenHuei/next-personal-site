@@ -1,3 +1,5 @@
+import { forwardRef } from 'react'
+
 // components
 import {
   ResumeList,
@@ -17,11 +19,14 @@ export interface ResumeProps {
   list: ResumeInformation[]
 }
 
-const Resume: React.FC<ResumeProps> = (props: ResumeProps) => {
+const Resume: React.ForwardRefRenderFunction<HTMLElement, ResumeProps> = (
+  props: ResumeProps,
+  ref
+) => {
   const { title, list } = props
 
   return (
-    <Section title={title}>
+    <Section ref={ref} title={title}>
       <ResumeList>
         {list.map((item, index) => (
           <ResumeItem key={item.company}>
@@ -39,4 +44,4 @@ const Resume: React.FC<ResumeProps> = (props: ResumeProps) => {
   )
 }
 
-export default Resume
+export default forwardRef(Resume)

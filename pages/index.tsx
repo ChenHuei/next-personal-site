@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import styled from 'styled-components'
 
 // components
@@ -14,17 +15,19 @@ import { ABOUT_INFORMATION } from '@/constants/about'
 import { RESUME_INFORMATION } from '@/constants/resume'
 import { WORKS_LIST } from '@/constants/works'
 
-const HomeWrapper = styled.main`
-  background-color: #000;
-`
+const HomeWrapper = styled.main``
 
 export default function Home() {
+  const aboutRef = useRef<HTMLElement>(null)
+  const resumeRef = useRef<HTMLElement>(null)
+  const worksRef = useRef<HTMLElement>(null)
+
   return (
     <HomeWrapper>
-      <Header list={HEADER_ITEMS} />
-      <About title="about me" {...ABOUT_INFORMATION} />
-      <Resume title="resume" list={RESUME_INFORMATION} />
-      <Works title="latest works" list={WORKS_LIST} />
+      <Header list={HEADER_ITEMS} refs={{ about: aboutRef, resume: resumeRef, works: worksRef }} />
+      <About ref={aboutRef} title="about me" {...ABOUT_INFORMATION} />
+      <Resume ref={resumeRef} title="resume" list={RESUME_INFORMATION} />
+      <Works ref={worksRef} title="latest works" list={WORKS_LIST} />
       <Footer title="contact me" list={FOOTER_ITEMS} />
     </HomeWrapper>
   )

@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import Image from 'next/image'
 
 // components
@@ -20,11 +21,11 @@ export interface WorksProps {
   list: WorkItem[]
 }
 
-const Works: React.FC<WorksProps> = (props: WorksProps) => {
+const Works: React.ForwardRefRenderFunction<HTMLElement, WorksProps> = (props: WorksProps, ref) => {
   const { title, list } = props
 
   return (
-    <Section title={title}>
+    <Section ref={ref} title={title}>
       <WorksList>
         {list.map(item => (
           <WorksItem key={item.link}>
@@ -49,4 +50,4 @@ const Works: React.FC<WorksProps> = (props: WorksProps) => {
   )
 }
 
-export default Works
+export default forwardRef(Works)

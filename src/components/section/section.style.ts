@@ -23,4 +23,8 @@ export const SectionTitle = styled.h1`
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 659px) {
+    font-size: 32px;
+  }
 `

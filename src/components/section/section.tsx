@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { forwardRef, ReactNode } from 'react'
 import { SectionWrapper, SectionTitle } from './section.style'
 
 export interface SectionProps {
@@ -6,15 +6,18 @@ export interface SectionProps {
   children?: ReactNode
 }
 
-const Section: React.FC<SectionProps> = (props: SectionProps) => {
+const Section: React.ForwardRefRenderFunction<HTMLElement, SectionProps> = (
+  props: SectionProps,
+  ref
+) => {
   const { title, children } = props
 
   return (
-    <SectionWrapper>
+    <SectionWrapper ref={ref}>
       <SectionTitle>{title}</SectionTitle>
       {children}
     </SectionWrapper>
   )
 }
 
-export default Section
+export default forwardRef(Section)

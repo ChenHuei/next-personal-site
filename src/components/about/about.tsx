@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import Image from 'next/image'
 
 // components
@@ -23,11 +24,11 @@ export interface AboutProps extends AboutInformation {
   title: string
 }
 
-const About: React.FC<AboutProps> = (props: AboutProps) => {
+const About: React.ForwardRefRenderFunction<HTMLElement, AboutProps> = (props: AboutProps, ref) => {
   const { title, name, jobs, description, phone, email, links } = props
 
   return (
-    <Section title={title}>
+    <Section ref={ref} title={title}>
       <AboutWrapper>
         <CoverWrapper>
           <Image src="/cover.jpg" layout="fill" objectFit="contain" alt="cover" />
@@ -57,4 +58,4 @@ const About: React.FC<AboutProps> = (props: AboutProps) => {
   )
 }
 
-export default About
+export default forwardRef(About)

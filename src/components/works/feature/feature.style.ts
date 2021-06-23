@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const FeatureTitle = styled.h4`
+export const FeatureTitle = styled.p`
   margin: 0 0 8px;
   font-size: 14px;
   font-weight: 700;

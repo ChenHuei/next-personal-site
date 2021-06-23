@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = (props: FooterProps) => {
       <FooterTitle>{title}</FooterTitle>
       <FooterContactList>
         {list.map(item => (
-          <FooterContactItem key={item.url} href={item.url} target={item.target}>
+          <FooterContactItem key={item.url} href={item.url} target={item.target} rel="noreferrer">
             <FooterContactItemIcon icon={item.icon} />
           </FooterContactItem>
         ))}

@@ -29,7 +29,7 @@ const Works: React.ForwardRefRenderFunction<HTMLElement, WorksProps> = (props: W
       <WorksList>
         {list.map(item => (
           <WorksItem key={item.link}>
-            <WorksItemLink href={item.link} target="_blank">
+            <WorksItemLink href={item.link} target="_blank" rel="noreferrer">
               <Image
                 src={item.logo}
                 alt={item.name}

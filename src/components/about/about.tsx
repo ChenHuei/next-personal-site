@@ -41,13 +41,18 @@ const About: React.ForwardRefRenderFunction<HTMLElement, AboutProps> = (props: A
             <InformationIcon icon={phone.icon} />
             {phone.value}
           </InformationPhone>
-          <InformationEmail href={`mailto:${email.value}`}>
+          <InformationEmail href={`mailto:${email.value}`} rel="noreferrer">
             <InformationIcon icon={email.icon} />
             {email.value}
           </InformationEmail>
           <InformationLinkList>
             {links.map(item => (
-              <InformationLinkItem key={item.link} href={item.link} target="_blank">
+              <InformationLinkItem
+                key={item.link}
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {item.name}
               </InformationLinkItem>
             ))}

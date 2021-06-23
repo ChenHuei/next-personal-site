@@ -21,7 +21,7 @@ const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
         <ProjectItem key={item.title}>
           <ProjectItemTitle>
             {item.link ? (
-              <ProjectItemLink href={item.link} isOdd={isOdd} target="_blank">
+              <ProjectItemLink href={item.link} isOdd={isOdd} target="_blank" rel="noreferrer">
                 {item.title}
               </ProjectItemLink>
             ) : (

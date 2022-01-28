@@ -2,30 +2,38 @@ import { WorkItem } from '@/types/works'
 
 export const WORKS_LIST: WorkItem[] = [
   {
+    name: 'Huei & Bei Money',
+    description: '記帳網站',
+    logo: '/works/huei-bei-money.png',
+    link: 'https://huei-bei-money.vercel.app',
+    features: ['PWA', 'Firebase API', 'Material UI 搭配 React Hook Form']
+  },
+  {
     name: 'Huei & Bei Wedding',
     description: '婚禮網站',
     logo: '/works/huei-bei-wedding.png',
     link: 'https://huei-bei-wedding.com',
     features: [
-      '增加 PWA (Lighthouse & PageSpeed  評分 90+)',
-      '使用 GSAP and ScrollMagic 製作動畫',
-      '串接 LINE Bot API 並透過 server-sent event 製作彈幕特效',
-      '使用 AWS amplify + route 53 建置環境 '
+      'PWA',
+      'Lighthouse & PageSpeed 評分 90+',
+      'GSAP & ScrollMagic',
+      'LINE Bot API & server-sent event 製作彈幕特效',
+      'AWS amplify & route 53 建置環境 '
     ]
   },
   {
     name: '豪華郵輪集團 (網站關閉中...)',
     description: '郵輪航線訂票平台系統 (前後台)',
-    logo: '/works/genting.jpeg',
+    logo: '/works/genting.png',
     link: 'http://genting-cruise-www-sit.cloud-softwares.com/enUS',
-    features: ['使用 Nuxt.js 處理 SSR', '串接 google sheet API 管理多國語系', 'RWD & WebView']
+    features: ['Nuxt.js', 'google sheet API 管理多國語系', 'RWD & WebView']
   },
   {
     name: '台塑電子商務平台',
     description: '線上交易平台',
     logo: '/works/plastic.png',
     link: 'https://formosa-pepp-web-sit.cloud-interactive.com/login',
-    features: ['與台塑後端討論及介接 API', '串接 google sheet API 管理多國語系', 'RWD']
+    features: ['與台塑後端討論及介接 API', 'google sheet API 管理多國語系', 'RWD']
   },
   {
     name: 'Scan2Pay',

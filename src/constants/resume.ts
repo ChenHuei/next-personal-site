@@ -2,21 +2,36 @@ import { ResumeInformation } from '@/types/resume'
 
 export const RESUME_INFORMATION: ResumeInformation[] = [
   {
+    company: '香港電視購物網絡 (HKTVmall)',
+    title: '前端工程師',
+    time: '2021/07 ~ now',
+    projects: [
+      {
+        title: '無人商店購物網站',
+        description: '使用 Next.js 搭配 redux saga and ionic framework 實作仿 APP 網站'
+      },
+      {
+        title: 'Dashboard Monitor',
+        description: '使用 Gatsby 搭配 react query 建構後台'
+      },
+    ]
+  },
+  {
     company: '雲端互動 (Cloud Interactive)',
     title: '前端工程師',
-    time: '2019/09 ~ now',
+    time: '2019/09 ~ 2021/07',
     projects: [
       {
         title: '豪華郵輪集團 (Resorts World Genting)',
-        description: '使用 Nuxt.js 處理 SSR，以及搭配 google sheet API 管理多國語系'
+        description: '使用 Nuxt.js 搭配 google sheet API 管理多國語系和 SSR'
       },
       {
         title: '台塑電子商務平台',
-        description: '串接台塑 API 建構 RWD 的線上交易平台'
+        description: '串接台塑 API 建構 RWD 線上交易平台'
       },
       {
         title: '安麗簡訊平台 & 直播平台',
-        description: '使用 Typescript with vue-property-decorato 建構前後台系統'
+        description: '使用 Typescript (vue-property-decorator) 建構前後台系統'
       }
     ]
   },
@@ -27,11 +42,11 @@ export const RESUME_INFORMATION: ResumeInformation[] = [
     projects: [
       {
         title: '漢堡王點餐系統',
-        description: '透過 API 串接線上和線下交易(悠遊卡)，開發線上點餐系統'
+        description: '透過 API 串接線上和線下交易實作線上點餐平台'
       },
       {
         title: '發票管理平台',
-        description: '與行政人員討論需求、規劃流程和介接藍新金流 API 開發線上發票平台'
+        description: '與行政人員討論需求、規劃流程並介接藍新金流 API 開發電子發票平台'
       },
       {
         title: '特店平台',

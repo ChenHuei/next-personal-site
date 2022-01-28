@@ -17,7 +17,9 @@ import { ABOUT_INFORMATION } from '@/constants/about'
 import { RESUME_INFORMATION } from '@/constants/resume'
 import { WORKS_LIST } from '@/constants/works'
 
-const HomeWrapper = styled.main``
+const HomeWrapper = styled.main`
+  overflow-x: hidden;
+`
 
 export default function Home() {
   const aboutRef = useRef<HTMLElement>(null)

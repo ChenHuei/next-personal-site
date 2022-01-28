@@ -6,7 +6,7 @@ export const WORKS_LIST: WorkItem[] = [
     description: '記帳網站',
     logo: '/works/huei-bei-money.png',
     link: 'https://huei-bei-money.vercel.app',
-    features: ['PWA', 'Firebase API', 'Material UI 搭配 React Hook Form']
+    features: ['vite with react-ts', 'PWA', 'Firebase API', 'Material UI 搭配 React Hook Form']
   },
   {
     name: 'Huei & Bei Wedding',

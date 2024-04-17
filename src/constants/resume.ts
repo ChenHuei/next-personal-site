@@ -2,18 +2,47 @@ import { ResumeInformation } from '@/types/resume'
 
 export const RESUME_INFORMATION: ResumeInformation[] = [
   {
-    company: '香港電視購物網絡 (HKTVmall)',
-    title: '前端工程師',
-    time: '2021/07 ~ now',
+    company: '鼎恒數位科技 (MAYO)',
+    title: '資深前端工程師',
+    time: '2022/06 ~ now',
     projects: [
       {
-        title: '無人商店購物網站',
-        description: '使用 Next.js 搭配 redux saga and ionic framework 實作仿 APP 網站'
+        title: '優化產品',
+        description: '加入網站的 CSP 設定、安排專案的 React 升級計畫...'
       },
       {
-        title: 'Dashboard Monitor',
-        description: '使用 Gatsby 搭配 react query 建構後台'
+        title: '跨國、開發團隊',
+        description: '統一專案的時區設定，並依不同國家實作符合該地區法規及文化的功能'
       },
+      {
+        title: '面試',
+        description: '參與 20 逾人的前端面試，並制定面試規範'
+      }
+    ]
+  },
+  {
+    company: '香港電視購物網絡 (HKTVmall)',
+    title: '前端工程師',
+    time: '2021/07 ~ 2022/06',
+    projects: [
+      {
+        title: '技術選型',
+        description:
+          '基於仿 APP 的產品性質，提出 ionic 取代 antd 成為新的 UI 框架提升使用者體驗，並成功落實於公司'
+      },
+      {
+        title: 'Mentor',
+        description:
+          '擔任三位 front-end engineer 的 mentor，同時也負責規劃和評估其他 junior 的 React 學習狀況'
+      },
+      {
+        title: '技術分享',
+        description: '分享 Next.js 的特點(v12)、Testing 的概念與實作，以及 airbnb 的 style guide'
+      },
+      {
+        title: '無人商店購物網站',
+        description: '使用 Next.js 建立專案、負責串接第三方金流，以及調整 react-native'
+      }
     ]
   },
   {
@@ -22,16 +51,8 @@ export const RESUME_INFORMATION: ResumeInformation[] = [
     time: '2019/09 ~ 2021/07',
     projects: [
       {
-        title: '豪華郵輪集團 (Resorts World Genting)',
-        description: '使用 Nuxt.js 搭配 google sheet API 管理多國語系和 SSR'
-      },
-      {
-        title: '台塑電子商務平台',
-        description: '串接台塑 API 建構 RWD 線上交易平台'
-      },
-      {
-        title: '安麗簡訊平台 & 直播平台',
-        description: '使用 Typescript (vue-property-decorator) 建構前後台系統'
+        title: '豪華郵輪、台塑電子商務、安麗簡訊...',
+        description: '使用 Nuxt.js 以及 Typescript (vue-property-decorator) 建立專案'
       }
     ]
   },
@@ -41,16 +62,8 @@ export const RESUME_INFORMATION: ResumeInformation[] = [
     time: '2018/07 ~ 2019/05',
     projects: [
       {
-        title: '漢堡王點餐系統',
-        description: '透過 API 串接線上和線下交易實作線上點餐平台'
-      },
-      {
-        title: '發票管理平台',
-        description: '與行政人員討論需求、規劃流程並介接藍新金流 API 開發電子發票平台'
-      },
-      {
-        title: '特店平台',
-        description: '沿用既有技術 jQuery 進行維運和開發'
+        title: '整合行動支付、漢堡王點餐系統、發票管理平台...',
+        description: '使用 Vue.js 建立專案，並串接各種電子支付和發票(藍新)的 API'
       }
     ]
   },

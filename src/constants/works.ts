@@ -6,19 +6,18 @@ export const WORKS_LIST: WorkItem[] = [
     description: '記帳網站',
     logo: '/works/huei-bei-money.png',
     link: 'https://huei-bei-money.vercel.app',
-    features: ['vite with react-ts', 'PWA', 'Firebase API', 'Material UI 搭配 React Hook Form']
+    features: ['vite', 'PWA', 'Firebase', 'React Hook Form']
   },
   {
     name: 'Huei & Bei Wedding',
     description: '婚禮網站',
     logo: '/works/huei-bei-wedding.png',
-    link: 'https://huei-bei-wedding.com',
+    link: 'https://chenhuei.github.io/huei-bei-wedding',
     features: [
       'PWA',
-      'Lighthouse & PageSpeed 評分 90+',
-      'GSAP & ScrollMagic',
-      'LINE Bot API & server-sent event 製作彈幕特效',
-      'AWS amplify & route 53 建置環境 '
+      'performance scoring 90+',
+      'animation (GSAP, ScrollMagic)',
+      '彈幕 (LINE Bot, server-sent event)'
     ]
   },
   {
@@ -26,21 +25,21 @@ export const WORKS_LIST: WorkItem[] = [
     description: '郵輪航線訂票平台系統 (前後台)',
     logo: '/works/genting.png',
     link: 'http://genting-cruise-www-sit.cloud-softwares.com/enUS',
-    features: ['Nuxt.js', 'google sheet API 管理多國語系', 'RWD & WebView']
+    features: ['Nuxt.js', 'RWD', 'WebView']
   },
-  {
-    name: '台塑電子商務平台',
-    description: '線上交易平台',
-    logo: '/works/plastic.png',
-    link: 'https://formosa-pepp-web-sit.cloud-interactive.com/login',
-    features: ['與台塑後端討論及介接 API', 'google sheet API 管理多國語系', 'RWD']
-  },
+  // {
+  //   name: '台塑電子商務平台',
+  //   description: '線上交易平台',
+  //   logo: '/works/plastic.png',
+  //   link: 'https://formosa-pepp-web-sit.cloud-interactive.com/login',
+  //   features: ['與台塑後端討論及介接 API', 'google sheet API 管理多國語系', 'RWD']
+  // },
   {
     name: 'Scan2Pay',
     description: '串接線上支付方式',
     logo: '/works/scan2pay.png',
     link: 'https://dev.intella.co/intella#forward',
-    features: ['串接行動支付 (台灣Pay、LuckyPAY、ezPay...)', '前端介面優化']
+    features: ['串接行動支付 (台灣Pay、LuckyPAY、ezPay...)', '前端介面優化']
   }
   // {
   //   name: '漢堡王',
